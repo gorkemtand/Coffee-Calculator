@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfect Coffee</title>
+    <link rel="icon" href="images/coffeFavIcon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<section id="header">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#header"><img src="images/coffee-beans.png" alt="" srcset=""></a>
+    </nav>
+  
+    
+    <div class="row oppening">
+
+        <div class="col-lg-6">
+            <h1 class="big-heading">HOW TO MEASURE YOUR COFFE: COFFE TO WATER RATIO CALCULATOR</h1>
+            <p>Does your coffee taste off, but you’re not sure why? Chances are you aren’t measuring your coffee properly. Our coffee to water ratio calculator helps you make the perfect coffee every time.</p>
+           <a href="#more-about-coffee"><button type="button" class="btn btn-primary oppening-btn">Do You Want To Learn More About Coffe?</button></a> 
+        </div>
+
+        <div class="col-lg-6">
+            <img src="images/chemex.jpg" alt="chemex-pouring">
+        </div>
+
+    </div>
+
+</section>
+<!-----------------------SELECTING STYLE OF THE COFFEE---------------------------------->
+<section id="calculation-section">
+  
+  <section id="style-selection">
+    <h3 id="method-h3">CHOOSE YOUR BREWING METHOD</h3>
+    <div class="input-group p-5">
+        
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+        <img src="images/frenchpress-emoji.png" alt="FRENCH PRESS" width="70" height="70">
+        <p>FRENCH PRESS</p>
+        </label>
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+       <img src="images/chemex-emoji.png" alt="CHEMEX" width="70" height="70">
+       <p>CHEMEX</p>
+        </label>
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+       <img src="images/moka-pot-emoji.png" alt="MOKA POT" width="70" height="70">
+       <p>MOKA POT</p>
+        </label>
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+        <img src="images/siphon-emoji.png" alt="SIPHON" width="70" height="70">
+        <p>SIPHON</p>
+        </label>
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+        <img src="images/aeropress-emoji.png" alt="AEROPRESS" width="70" height="70">
+        <p>AEROPRESS</p>
+        </label>
+        <label class="radio-stock-img ">
+        <input type="radio" name="stock_image" value="">
+        <img src="images/pour-over-emoji.png" alt="POUR OVER" width="70" height="70">
+        <p>POUR OVER</p>
+     </div>
+
+  </section>
+   <!-----------------------SELECTING CUP AND RATIO----------------------------->
+  <section id="adjusting-coffee">
+    
+      <div class="costomize hidden">
+        <h3>LET'S COSTOMIZE YOUR BREW</h3>
+        <div class="goBack-div"><button type="button" class="btn btn-outline-dark costomize-goBack"><i class="fa-solid fa-backward"></i></button></div>
+      <div class="number-of-cups">
+        <h5>Select your number of cups</h5>
+        <input id="cups" type="number" min="1" max="10" value="1" step="1">
+      </div>  
+      
+      <div class="ratio-of-coffee">
+        <h5>Set your preferred brew strength</h5>
+        <button type="button" class="btn btn-warning ratio-btn">MILD</button>
+        <button type="button" class="btn btn-warning ratio-btn">NORMAL</button>
+        <button type="button" class="btn btn-warning ratio-btn">STRONG</button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-dark calculation-btn">CALCULATE</button>
+    </div>
+    </div>
+  </section>
+    
+
+ <!------------------------RESULT OF COFFEE------------------->
+  <section id="result-of-coffee">
+    <div id="result" class="hidden">
+      <h3>ENJOY YOUR COFFEE</h3>
+      <div class="goBack-div"><button type="button" class="btn btn-outline-dark result-goBack"><i class="fa-solid fa-backward"></i></button></div>
+      <div class="resultContent">
+        <img src="images/coffee-bag.png" alt="coffee-bag" srcset="">
+        <div id="result-coffee"></div>
+      </div>
+
+      <span style="font-size: 40px">+</span>
+
+      <div class="resultContent">
+        <img src="images/gooseneck.png" alt="gooseneck" srcset="">
+        <div id="result-water"></div>
+      </div>
+
+      <span style="font-size: 40px">=</span>
+
+      <div class="resultContent">
+        <img src="images/frenchpress-emoji.png" class="final-img" alt="style-img">
+        <div id="final-result"></div>
+      </div>
+
+    </div>
+  </section>
+</section>
+  <!----------------------------MORE ABOUT COFFEE------------------->
+
+  <section id="more-about-coffee">
+    <section class="more-about-coffee" id="coffee-water-ratio">
+    <h2>WHY ARE COFFEE-TO-WATER RATIOS IMPORTANT?</h2>
+
+    <P>Coffee-to-water ratios, or <em>brew ratios</em>, are the backbone of every brewing recipe. This concept allows you to easily tweak the intensity of your cup by adding or reducing the amount of coffee that you use — or the amount of water sometimes.</P>
+    <p>The brew strength presets on our calculator are based on industry standards, popular recipes, and our very own testing. But you don’t have to limit yourself to these! Differences in coffee, equipment, and taste preferences mean that there’s plenty of room to play around.</p>
+    </section>
+
+    <section class="more-about-coffee" id="temp-to-brew">
+    <h2>PERFECT TEMPERATURE TO BREW COFFEE</h2>
+
+    <p>The old war of thinking, is that there is one tempreture that is more ideal than all the other ones.</p>
+    <p>Usually, that temperature is <strong>200 °F or 93.33 °C</strong> depending who you ask.</p>
+    <p>We are not sure about the scientific validity of these claims, but if you always brew coffee at <strong>200 °F/93 °C</strong>, you will be in a pretty decent range most of the time. Most <em>high quality</em> coffee makers are programmed to aim for this temperature.</p>
+    <p>However, everyones taste is different. So, don't be shy to try new tempretures four your self!</p>
+    </section>
+
+    <section class="more-about-coffee" id="grind">
+    <h2>DOES YOUR COFFEE GRIND REALLY MATTER?</h2>
+    <p>We think the smell of freshly-ground coffee is one of the best things about making coffee yourself, so you owe it to yourself to get a coffee grinder if you’re serious about it.</p>
+    <p>But if you already have pre-ground coffe, then fret not! You can use our calculator no matter what you have on hand, and still you can enjoy your <strong>coffee.</strong></p>
+    </section>
+
+    <section class="more-about-coffee" id="roast">
+    <h2>THE 4 TYPES OF COFFEE ROASTS</h2>
+    <section class="roast-type">
+    <h4>1. Light Coffee Roast</h4>
+    <p>The longer a bean is roasted the more the heat pulls out the caffeine and the acidity. This means light roasts have the most caffeine <u>(by volume)</u> and the most acidity. Light roasts can have a different taste profile because the shortened roasting process prevents some chemical changes from occurring inside the bean. Origin flavors of the bean are more recognizable in light roasts since the flavors that come from the roasting process often aren’t prominent. The acidity in light roasts is often accompanied by a citrus or lemon tone which some people find pleasing to the palate.</p>
+    </section>
+
+    <section class="roast-type">
+    <h4>2. Medium Coffee Roasts</h4>
+    <p>Medium roasts are what the average American coffee drinker is used to. These roasts are considered to have balanced flavors. The acidity and body of a medium roast can vary but are usually somewhere in the middle. Some examples of medium roasts are House blend, Breakfast roast, and American Roast.</p>
+    </section>
+
+    <section class="roast-type">
+    <h4>3. Medium-Dark Coffee Roast</h4>
+    <p>These roasts have a richer, fuller flavor, more body, and less acidity. Vienna Roast and Full-City Roast are some examples of a medium-dark roast coffee blend.</p>
+    </section>
+
+    <section class="roast-type">
+    <h4>4. Dark Coffee Roast</h4>
+    <p>Dark roasts have sweeter flavors because the sugars in the coffee beans have time to caramelize. The longer roasting process helps it to develop a richer flavor and full body, which often leads to it having a buttery finish. They also have the least acidity of all coffee roasts. Dark roasts have the least amount of caffeine because they’re roasted the longest.</p>
+    </section>
+    </section>
+
+  </section>
+  
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+<footer>GÖRKEM TANDOĞAN</footer>
+</html>    
+

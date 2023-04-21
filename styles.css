@@ -1,0 +1,240 @@
+body{
+    background-color: #FAF3E0;
+    font-family: 'Oswald', sans-serif;
+}
+h2,h3,h4{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #263A29;
+}
+h5{
+    font-size: 1.5rem;
+    color: black;
+}
+.btn{
+    margin: 20px 20px 0 20px;
+    font-size: 1.2rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.navbar-brand{
+    margin: auto;
+    color: #FF5F1F;
+}
+
+
+/* ------------------ CONTEXT AREA ----------------*/
+#header{
+    padding-bottom: 100px;
+}
+
+.oppening{
+    text-align: left;
+    margin: 5% 10% 0 10%;
+    
+}
+
+.oppening h1{
+    font-size: 4.5rem;
+    color: #263A29;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.oppening img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.oppening p{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.oppening-btn{
+    padding: 10px 10px 10px 10px;
+    margin: 10% 0 10% 0;
+    background-color:  #263A29;
+    border-color: #263A29;
+}
+
+.oppening-btn:hover{
+    background-color: white;
+    color: #263A29;
+    border-color: #263A29;
+}
+
+/* -------------------- SELECTING STYLE OF COFFEE BREW ------------- */
+
+.input-group {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+   
+    .radio-stock-img {
+    position: relative;
+    }
+    .radio-stock-img img {
+    opacity: 0.8;
+    width: 90px;
+    height: 90px;
+    background-position: center center;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.4s ease-in-out;
+    }
+    .radio-stock-img:hover img {
+    opacity: 1;
+    }
+    .radio-stock-img > input { 
+    display:none;
+    }
+    .radio-stock-img > img{
+    cursor:pointer;
+    border: 2px solid #2d4668;
+    }
+    .radio-stock-img > input:checked + img{ 
+    border:2px solid #c52026;
+    box-shadow: #000000 0px 14px 20px -10px;
+    transform: translate(0px, -10px);
+    opacity: 1;
+    }
+
+   
+
+
+/* ------------------ CALCULATION -----------------------------*/
+
+#calculation-section{
+    text-align: center;
+}
+
+
+/* --------------------- ADJUSTING COFFEE ------------------- */
+.costomize{
+    padding: 0 3rem 3rem 3rem;
+}
+
+.goBack-div{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2rem 2rem 1rem 1rem;
+}
+
+.number-of-cups{
+    min-height: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+#cups{
+    text-align: center;
+    padding: 12px 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.ratio-of-coffee{
+   min-height: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.ratio-btn {
+    border: none;
+    padding: 12px 40px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: 0.2s all;
+  }
+  
+.ratio-btn:focus {
+   transform: scale(0.95);
+   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+   background-color: #FAF3E0;
+   border: solid 2px;
+   border-color: #263A29;
+   color: #263A29;
+  }
+
+
+
+/* ---------------------- RESULT ------------------- */
+
+
+#result img{
+    max-width: 100px;
+    min-height: 100px;
+}
+
+.resultContent{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3rem 1rem 4rem 1rem;
+    font-size: 1.2rem;
+}
+
+#result-coffee{
+    margin-top: 1rem;
+}
+
+#result-water{
+    margin-top: 1rem;
+}
+
+#final-result{
+    margin-top: 1rem;
+}
+
+
+
+/* ------------------- MORE ABOUT COFFEE ------------------------------- */
+
+#more-about-coffee p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.more-about-coffee{
+    text-align: left;
+    padding: 45px 90px 45px 90px;
+    background-color: white;
+}
+
+
+#temp-to-brew{
+    background-color: #FAF3E0;
+}
+
+
+#roast{
+    background-color: #FAF3E0;
+}
+
+.roast-type{
+    padding: 15px 0 15px;
+}
+
+.roast-type h4{
+    font-size: 1.7rem;
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
+
+/* ------- FOOTER ------ */
+footer{
+    text-align: center;
+    opacity: 0.7;
+    padding-bottom: 50px;
+}
